@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    line-height: 1;
+    list-style: none;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    background-image: url(/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    font-family: "Inter", serif;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 700px;
+    height: auto;
+    padding: 30px 10px 30px 10px;
+    margin: 100px auto;
+    margin-bottom: 36.5px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 10px 0px #0000001A;
+}
+
+h1 {
+    font-size: 35px;
+    font-family: "Quicksand", serif;
+    text-align: center;
+}
+
+.desc {
+    font-size: 15px;
+    text-align: center;
+    margin: 17px;
+    line-height: 20px;
+}
+
+.sub-judul {
+    margin: 30px 0px 15px 20px;
+    font-family: "Quicksand", serif;
+    font-size: 25px;
+    display: block;
+}
+
+.minat select {
+    width: 410px;
+}
+
+.umur input {
+    width: 180px;
+}
+
+.umur, .minat{
+    font-size: 18px;
+    margin: 10px 20px 15px 20px;
+}
+
+textarea{
+    font-size: 18px;
+    margin: 10px 30px 15px 20px;
+    max-width: 500px;
+    min-width: 500px;
+    max-height: fit-content;
+    min-height: fit-content;
+}
+
+.nama, .email{
+    font-size: 18px;
+    margin: 30px 90px 15px 20px;
+}
+
+.question {
+    font-size: 18px;
+    margin: 10px 90px 10px 20px;
+}
+
+.pilihan label, .rec label {
+    margin-top: 15px;
+}
+
+.pilihan, .rec{
+    font-size: 18px;
+    margin: 10px 30px 15px 20px;
+}
+
+.pilihan:nth-of-type(1) {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 12px;
+}
+
+input, select, textarea {
+    border: 3px rgb(185, 185, 185) solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border: 3px rgb(62, 102, 246) solid;
+    box-shadow: 0 0 2px;
+}
+
+.row-1, .row-2{
+    display: flex;
+    flex-direction: row;
+}
+
+select:hover{
+    cursor: pointer;
+}
+
+.submit {
+    padding: 10px 80px 10px 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+
+.submit:hover {
+    cursor: pointer;
+}

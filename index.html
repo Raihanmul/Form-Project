@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="card">
+        <h1 class="judul">Registration Form</h1>
+        <p class="desc">Thank you for visiting our registration page! Please fill out the form below to join us and unlock all the benefits we offer. We're excited to have you on board!</p>
+        <p class="sub-judul">Personal Data</p>
+        <div class="row-1">
+            <div class="nama">
+                <label for="nama">Nama</label>
+                <input  id="nama" type="text" placeholder="Masukkan nama anda" required>
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+                <input id="email"type="email" placeholder="Masukkan alamat email anda" required>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="umur">
+                <label for="umur">Umur</label>
+                <input id="umur" type="number" placeholder="Umur" min="17" max="25" required>
+            </div>
+            <div class="minat">
+                <label for="minat">Ilmu Komputer apa yang diminati?</label>
+                <select id="dropdown" name="dropdown" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="rpl">Software Developer</option>
+                    <option value="dkv">UI/UX Designer</option>
+                    <option value="tkj">Network Engineer</option>
+                    <option value="iot">IoT</option>
+                </select>
+            </div>
+        </div>
+        <div class="row-3">
+            <label for="about" class="question">Bagaimana cara anda mengetahui Website kami?</label>
+            <div class="pilihan">
+                <label for="yt">
+                    <input id="yt" type="radio" name="about" value="YouTube" checked> Youtube
+                </label>
+                <label for="tt">
+                    <input id="tt" type="radio" name="about" value="Tiktok"> Tiktok
+                </label>
+                <label for="ig">
+                    <input id="ig" type="radio" name="about" value="Instagram"> Instagram
+                </label>
+                <label for="fb">
+                    <input id="fb" type="radio" name="about" value="Facebook"> Facebook
+                </label>
+            </div>
+        </div>
+        <div class="row-4">
+            <label for="rec" class="question">Kepada siapakah anda akan merekomendasikan Website kami?</label>
+            <div class="rec">
+                <label for="keluarga">
+                    <input id="keluarga" type="checkbox" name="rec" value="keluarga" checked> Keluarga
+                </label>
+                <label for="Teman">
+                    <input id="Teman" type="checkbox" name="rec" value="Teman"> Teman
+                </label>
+                <label for="Saudara">
+                    <input id="Saudara" type="checkbox" name="rec" value="Saudara"> Saudara
+                </label>
+                <label for="Guru">
+                    <input id="Guru" type="checkbox" name="rec" value="Guru"> Guru
+                </label>
+                <label for="Lainnya">
+                    <input id="Lainnya" type="checkbox" name="rec" value="Lainnya"> Lainnya
+                </label>
+            </div>
+        </div>
+        <div class="row-5">
+            <label for="saran" class="question">Silahkan berikan masukan kepada kami (opsional)</label>
+            <textarea name="saran" id="saran" placeholder="Masukkan saran anda"></textarea>
+        </div>
+        <input type="submit" class="submit">
+    </div>
+</body>
+</html>
